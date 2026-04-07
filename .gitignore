@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build
+.next/
+out/
+dist/
+build/
+public/r/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# turbo
+.turbo/
+
+# ruflo/swarm
+.swarm/
+.claude-flow/
+.claude/
+.mcp.json
+
+# research/planning files
+pulkitverma-design-system.md
+shadcn-ecosystem-deep-research.md
+PLAN.md
+
+# debug
+npm-debug.log*
+pnpm-debug.log*

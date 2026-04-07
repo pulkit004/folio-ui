@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+/* ================================================================
+   FOLIO-UI — Editorial Design System Tokens
+   "Components for the editorial web."
+   ================================================================ */
+
+:root {
+  /* shadcn standard semantic tokens */
+  --background: #f5efe2;
+  --foreground: #141414;
+  --card: #fbf7ee;
+  --card-foreground: #141414;
+  --popover: #fbf7ee;
+  --popover-foreground: #141414;
+  --primary: #141414;
+  --primary-foreground: #fbf7ee;
+  --secondary: #f5efe2;
+  --secondary-foreground: #141414;
+  --muted: #e8e0d0;
+  --muted-foreground: #5f5a52;
+  --accent: #edd2c4;
+  --accent-foreground: #c75a2c;
+  --destructive: #b91c1c;
+  --destructive-foreground: #fef2f2;
+  --border: #1f1c18;
+  --input: #1f1c18;
+  --ring: #c75a2c;
+  --radius: 0rem;
+
+  /* Chart colors */
+  --chart-1: #c75a2c;
+  --chart-2: #1f4ed8;
+  --chart-3: #5f5a52;
+  --chart-4: #7a7369;
+  --chart-5: #141414;
+
+  /* Editorial extensions */
+  --paper: #f5efe2;
+  --paper-2: #fbf7ee;
+  --ink: #141414;
+  --muted-2: #7a7369;
+  --line: #1f1c18;
+  --accent-warm: #c75a2c;
+  --accent-soft: #edd2c4;
+  --link: #1f4ed8;
+  --quote-bg: #1a1815;
+  --quote-fg: #f7f1e7;
+  --manifesto-label: #dfd4c3;
+  --accent-card-bg: #f6dfd5;
+  --shadow-color: #1c1a17;
+}
+
+@theme inline {
+  /* Colors — creates bg-*, text-*, border-* utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Editorial palette */
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-muted-2: var(--muted-2);
+  --color-line: var(--line);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-soft: var(--accent-soft);
+  --color-link: var(--link);
+  --color-quote-bg: var(--quote-bg);
+  --color-quote-fg: var(--quote-fg);
+  --color-manifesto-label: var(--manifesto-label);
+  --color-accent-card-bg: var(--accent-card-bg);
+
+  /* Typography */
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+  --default-font-family: var(--font-sans);
+
+  /* Radius — all zero */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
+
+  /* Shadow — hard offset, no blur */
+  --shadow-hard: 8px 8px 0 var(--shadow-color);
+  --shadow-hard-sm: 4px 4px 0 var(--shadow-color);
+  --shadow-hard-hover: 6px 6px 0 var(--shadow-color);
+
+  /* Accordion animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  /* Caret blink animation for OTP input */
+  --animate-caret-blink: caret-blink 1.25s ease-out infinite;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes caret-blink {
+  0%,
+  70%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  50% {
+    opacity: 0;
+  }
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a:hover {
+    color: var(--accent-warm);
+  }
+
+  ::selection {
+    background-color: var(--accent-soft);
+    color: var(--ink);
+  }
+}

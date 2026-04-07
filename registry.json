@@ -1,0 +1,525 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "folio",
+  "homepage": "https://folio-ui.com",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "description": "Utility function for merging Tailwind classes",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        { "path": "registry/default/lib/utils.ts", "type": "registry:lib" }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Editorial-styled button with ink borders, hard offset shadow, and mono-spaced label text",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/button.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Paper-toned card with 2px ink borders and hard offset shadow — the editorial clipping",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/card.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Rectangular badge with mono-spaced uppercase text and editorial ink borders",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/badge.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Text input with 2px ink borders on warm paper background",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/input.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Multi-line text input with editorial styling — manuscript field feel",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/textarea.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Form label in mono-spaced uppercase tracking — the column header treatment",
+      "dependencies": ["@radix-ui/react-label"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/label.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "2px ink rule — the same weight used in broadsheet newspapers",
+      "dependencies": ["@radix-ui/react-separator"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/separator.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "Square avatar with 2px ink border — magazine masthead headshot feel",
+      "dependencies": ["@radix-ui/react-avatar"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/avatar.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "Sharp-cornered toggle with ink fill on active state",
+      "dependencies": ["@radix-ui/react-toggle", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/toggle.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Marginal annotation tooltip with ink borders and hard shadow",
+      "dependencies": ["@radix-ui/react-tooltip"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/tooltip.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Warm-toned loading placeholder with muted pulse animation",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/skeleton.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Custom scroll area with thin ink scrollbar and squared-off thumb",
+      "dependencies": ["@radix-ui/react-scroll-area"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/scroll-area.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "typography",
+      "type": "registry:ui",
+      "title": "Typography",
+      "description": "Editorial typography system — serif headings, blockquotes, captions, and overlines",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/typography.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Collapsible content sections with serif headings and ink-rule dividers — the editorial FAQ",
+      "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/accordion.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Editorial alert with accented left border — the sidebar callout treatment",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/alert.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Square checkbox with ink border and editorial fill — the ballot box treatment",
+      "dependencies": ["@radix-ui/react-checkbox"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/checkbox.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Modal overlay with ink borders and hard shadow — the editorial pull-quote that demands attention",
+      "dependencies": ["@radix-ui/react-dialog", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/dialog.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Contextual menu with ink borders and hard shadow — the editorial action palette",
+      "dependencies": ["@radix-ui/react-dropdown-menu", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/dropdown-menu.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "Square radio indicators with ink borders — the editorial ballot treatment",
+      "dependencies": ["@radix-ui/react-radio-group"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/radio-group.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Dropdown select with ink borders and hard shadow — matches the editorial input treatment",
+      "dependencies": ["@radix-ui/react-select"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/select.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Slide-out panel anchored to any viewport edge — the sidebar insert of the editorial layout",
+      "dependencies": ["@radix-ui/react-dialog", "class-variance-authority", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/sheet.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Rectangular toggle switch with square thumb and ink borders",
+      "dependencies": ["@radix-ui/react-switch"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/switch.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Section switcher with mono-spaced labels and active-state hard shadow — the editorial tab bar",
+      "dependencies": ["@radix-ui/react-tabs"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/tabs.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "Fixed aspect ratio container — the editorial image frame",
+      "dependencies": ["@radix-ui/react-aspect-ratio"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/aspect-ratio.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Navigation breadcrumb with mono-spaced links — the editorial wayfinding trail",
+      "dependencies": ["@radix-ui/react-slot"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/breadcrumb.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "Expandable content section — the editorial fold",
+      "dependencies": ["@radix-ui/react-collapsible"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/collapsible.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "Command palette with mono-spaced shortcuts — the editorial quick-jump",
+      "dependencies": ["cmdk"],
+      "registryDependencies": ["utils", "dialog"],
+      "files": [
+        { "path": "registry/default/ui/command.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Page navigation with square ink buttons — the editorial issue navigator",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/pagination.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Floating content panel with ink borders — the editorial footnote",
+      "dependencies": ["@radix-ui/react-popover"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/popover.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Progress bar with ink borders — the editorial reading meter",
+      "dependencies": ["@radix-ui/react-progress"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/progress.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Range slider with square thumb and ink track — the editorial dial",
+      "dependencies": ["@radix-ui/react-slider"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/slider.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Data table with mono-spaced headers and ink rules — the editorial ledger",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/table.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "Grouped toggle buttons with shared editorial styling",
+      "dependencies": ["@radix-ui/react-toggle-group"],
+      "registryDependencies": ["utils", "toggle"],
+      "files": [
+        { "path": "registry/default/ui/toggle-group.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "Confirmation dialog with no dismiss — the editorial decision gate",
+      "dependencies": ["@radix-ui/react-alert-dialog"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/alert-dialog.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "Date picker calendar with mono day labels and serif month heading",
+      "dependencies": ["react-day-picker"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/calendar.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "Embla-powered carousel with editorial ink borders and hard shadow navigation",
+      "dependencies": ["embla-carousel-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/carousel.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "Recharts wrapper with editorial warm color palette and mono axis labels",
+      "dependencies": ["recharts"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/chart.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "Right-click menu with ink borders — the editorial context palette",
+      "dependencies": ["@radix-ui/react-context-menu"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/context-menu.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "Bottom sheet drawer with ink border — the editorial pull-up panel",
+      "dependencies": ["vaul"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/drawer.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "Hover-triggered content card with ink borders and hard shadow",
+      "dependencies": ["@radix-ui/react-hover-card"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/hover-card.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "One-time password input with square ink-bordered slots",
+      "dependencies": ["input-otp"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/input-otp.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "Horizontal menu bar with ink borders and editorial dropdown menus",
+      "dependencies": ["@radix-ui/react-menubar"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/menubar.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "Full navigation menu with viewport and editorial ink styling",
+      "dependencies": ["@radix-ui/react-navigation-menu"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/navigation-menu.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "Draggable panel layout with ink-bordered handles",
+      "dependencies": ["react-resizable-panels"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/resizable.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "Collapsible sidebar navigation with editorial ink border",
+      "registryDependencies": ["utils", "sheet"],
+      "files": [
+        { "path": "registry/default/ui/sidebar.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "Toast notifications with ink borders and hard shadow — the editorial flash bulletin",
+      "dependencies": ["sonner"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/sonner.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "Loading spinner with editorial sizing variants",
+      "dependencies": ["lucide-react", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/default/ui/spinner.tsx", "type": "registry:ui" }
+      ]
+    }
+  ]
+}
