@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.claude
+.claude-flow
+.mcp.json
+PLAN.md
+pulkitverma-design-system.md
+shadcn-ecosystem-deep-research.md
